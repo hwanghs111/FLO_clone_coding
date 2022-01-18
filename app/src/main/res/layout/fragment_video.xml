@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/video_lineup_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최신순"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@id/video_btn_downarrow_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/video_btn_downarrow_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/nugu_btn_down"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/video_lineup_tv"/>
+
+    <ImageView
+        android:id="@+id/video_video_exp_iv"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_video_exp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/video_lineup_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/video_song_exp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[MV] Coin"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@id/video_video_exp_iv"
+        app:layout_constraintTop_toBottomOf="@id/video_video_exp_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이유 (IU) | 2021.03.26"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/video_song_exp_tv"
+        app:layout_constraintTop_toBottomOf="@id/video_song_exp_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
